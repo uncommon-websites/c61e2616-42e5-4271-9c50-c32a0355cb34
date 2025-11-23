@@ -6,16 +6,23 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CenteredTextOnlyHero from "$lib/components/layout/hero-sections/CenteredTextOnlyHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+<CenteredTextOnlyHero
+	title="Emotion-aware voice agents that resolve enterprise support at scale"
+	subtitle="Deploy AI voice agents in two weeks with 90% resolution accuracy. Handle millions of calls across 99+ languages while maintaining natural conversation and emotion detection."
+	imageSrc="/generated/image-a-documentary-style-photograph-of-a-sale.webp"
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://cdn.brandfetch.io/doordash.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/airbnb.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/stripe.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/zendesk.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
