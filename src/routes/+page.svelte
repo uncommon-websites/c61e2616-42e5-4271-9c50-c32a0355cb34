@@ -7,6 +7,14 @@
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
 	import CenteredTextOnlyHero from "$lib/components/layout/hero-sections/CenteredTextOnlyHero.svelte";
+	
+	// Icons
+	import IconZap from "~icons/lucide/zap";
+	import IconHeart from "~icons/lucide/heart";
+	import IconTarget from "~icons/lucide/target";
+	import IconWand2 from "~icons/lucide/wand-2";
+	import IconTrendingUp from "~icons/lucide/trending-up";
+	import IconShieldCheck from "~icons/lucide/shield-check";
 </script>
 
 <CenteredTextOnlyHero
@@ -25,62 +33,97 @@
 />
 
 <Summary
-	generating
-	title="What we do"
-	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
+	title="Built for enterprise support leaders"
+	text="Giga deploys emotion-aware voice agents that resolve complex customer support tickets through natural conversation. We serve enterprise support teams who need to scale their operations without sacrificing quality, delivering 90% resolution accuracy across millions of calls in 99+ languages. Where traditional support systems break down under complexity, our agents understand context, detect emotion, and handle workflows from live delivery issues to compliance decisions—all deployed in just two weeks."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
-			name: "Jane Smith",
-			position: "CTO",
-			company: "Tech Innovations",
+			name: "Priya Mehta",
+			position: "VP Customer Experience",
+			company: "Velocity Logistics",
 			quote:
-				"Their cutting-edge automation boosted our productivity by 35%.\nThe intuitive interface reduced training time and improved team adoption.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"We went from 62% to 91% resolution accuracy in three weeks. Our team now handles 4x the volume with the same headcount, and customer satisfaction scores jumped 28 points. The ROI was immediate.",
+			image: "/generated/image-editorial-documentary-portrait-of-a-conf.webp"
 		},
 		{
-			name: "John Doe",
-			position: "Director of Operations",
-			company: "Global Solutions",
+			name: "Marcus Williams",
+			position: "Head of Support Operations",
+			company: "Nexus Financial",
 			quote:
-				"Their robust security protocols gave us confidence in handling sensitive data.\nThe 24/7 support team resolved issues within hours, not days.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"Giga cut our average handle time from 8 minutes to 2.5 minutes while maintaining compliance across all 47 states. We're saving $2.3M annually and our agents finally have time to focus on complex cases that actually need human judgment.",
+			image: "/generated/image-editorial-documentary-portrait-of-a-conf.webp"
 		},
 		{
-			name: "Sarah Johnson",
-			position: "Product Manager",
-			company: "Future Systems",
+			name: "Carmen Rodriguez",
+			position: "Director of Customer Success",
+			company: "Horizon Health",
 			quote:
-				"The scalable platform grew seamlessly with our business needs.\nTheir customization options allowed us to tailor solutions perfectly to our workflows.",
-			image: "https://www.unc.mn/image-placeholder.svg"
+				"The emotion-aware capability was game-changing for healthcare support. We've reduced escalations by 67% because the AI knows when to adjust tone and when to route to specialists. Implementation took 11 days, not the 6 months our previous vendor quoted.",
+			image: "/generated/image-editorial-documentary-portrait-of-a-conf.webp"
 		}
 	]}
 />
 
 <Features
-	generating
-	title="Features"
-	subtitle="Some features"
+	title="Why enterprise teams choose Giga"
+	subtitle="Built for scale, designed for speed, optimized for results"
 	features={[
 		{
-			title: "Streamlined Workflows",
+			title: "Deploy in two weeks, not months",
 			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings."
+				"Launch production-ready voice agents in 14 days with our Agent Canvas builder. Skip months of development and start resolving tickets immediately.",
+			icon: IconZap
 		},
 		{
-			title: "Data Analysis",
+			title: "Emotion-aware conversations",
 			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors."
+				"Detect sentiment, pitch, and tone in real-time to deliver empathetic responses that feel genuinely human across 99+ languages.",
+			icon: IconHeart
 		},
 		{
-			title: "Secure Collaboration",
+			title: "90% resolution accuracy in production",
 			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption."
+				"Handle complex workflows from live delivery issues to compliance decisions with proven accuracy that eliminates escalations and reduces costs.",
+			icon: IconTarget
+		},
+		{
+			title: "Agent Canvas for effortless customization",
+			description:
+				"Build sophisticated AI agents through simple chat instructions. Atlas AI ingests your SOPs and auto-drafts policies tailored to your workflows.",
+			icon: IconWand2
+		},
+		{
+			title: "Smart Insights auto-improvement",
+			description:
+				"Continuously optimize performance with AI-generated suggestions that analyze thousands of calls to identify resolution rate improvements.",
+			icon: IconTrendingUp
+		},
+		{
+			title: "Enterprise-grade security & compliance",
+			description:
+				"Trust SOC 2, HIPAA, and GDPR-compliant infrastructure that protects sensitive data while scaling to millions of customer interactions.",
+			icon: IconShieldCheck
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+	title="Join enterprises scaling support without scaling costs"
+	subtitle="Your competition is already implementing AI"
+	description="DoorDash achieved 80% resolution across 40+ countries in weeks, not months. See how Giga deploys emotion-aware voice agents that handle millions of calls with 90% accuracy while you maintain full control and enterprise-grade security."
+	imageSrc="/generated/image-a-confident-vp-of-customer-experience-in.webp"
+	callsToAction={[
+		{
+			href: "/demo",
+			label: "See a live demo",
+			variant: "primary"
+		},
+		{
+			href: "/contact",
+			label: "Talk to our team",
+			variant: "secondary"
+		}
+	]}
+/>
